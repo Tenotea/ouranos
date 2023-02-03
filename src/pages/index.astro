@@ -9,7 +9,9 @@ import InstagramIcon from '../assets/instagram-icon.svg'
 import LinkedInIcon from '../assets/linkedin-icon.svg'
 import ChiefOperatingOfficer from '../assets/chief-operating-officer.jpg'
 import ChiefInnovationOfficer from '../assets/chief-innovation-officer.jpg'
-import ManagingDirector from '../assets/managing-director.jpg'
+import ManagingDirector from '../assets/managing-director.jpg';
+import ArrowBallIllustration from '../assets/arrow-ball-illustration.svg'
+import CircleIllustration from '../assets/circle-illustration.svg'
 ---
 
 <Layout title="Ouranos - Deepening value and positioning for the future.">
@@ -183,77 +185,79 @@ import ManagingDirector from '../assets/managing-director.jpg'
 					Meet the leadership team
 				</h2>
 			</div>
-			
-			<div class="flex items-center overflow-auto gap-5 lg:gap-20 px-5 sm:px-10 lg:px-28 mt-20 max-w-[1500px] mx-auto scrollbar-hidden">
-				<!-- <div>
-					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
-						swipe left
-					</button>
-				</div>
-	 -->
-				<div class="flex items-start flex-shrink-0 gap-6">
-					<div class="flex-shrink-0">
-						<img 
-							src={ManagingDirector}
-							alt="ouranos team" 
-							class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
-						/>
-						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
-							Joseph Aransiola
-						</h6>
-						<p class="text-gray-400 mt-2">
-							Managing Director <br>  of Ouranos Technologies  
-						</p>
+			<div class="relative">
+				<img src={ArrowBallIllustration} class="absolute -top-10 left-2" />
+				<div class="flex items-center overflow-auto gap-5 lg:gap-20 px-5 sm:px-10 lg:px-28 mt-20 max-w-[1500px] mx-auto scrollbar-hidden">
+					<!-- <div>
+						<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
+							swipe left
+						</button>
 					</div>
-					
-					<div class="flex-shrink-0">
-						<img 
-							src={ChiefOperatingOfficer}
-							alt="ouranos team" 
-							class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
-						/>
-						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
-							Mfon Okon
-						</h6>
-						<p class="text-gray-400 mt-2">
-							Chief Operating Officer (COO) <br> of Ouranos Technologies
-						</p>
+					 -->
+					<div class="flex items-start flex-shrink-0 gap-6 relative z-[1]">
+						<div class="flex-shrink-0">
+							<img 
+								src={ManagingDirector}
+								alt="ouranos team" 
+								class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
+							/>
+							<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+								Joseph Aransiola
+							</h6>
+							<p class="text-gray-400 mt-2">
+								Managing Director <br>  of Ouranos Technologies  
+							</p>
+						</div>
+						
+						<div class="flex-shrink-0">
+							<img 
+								src={ChiefOperatingOfficer}
+								alt="ouranos team" 
+								class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
+							/>
+							<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+								Mfon Okon
+							</h6>
+							<p class="text-gray-400 mt-2">
+								Chief Operating Officer (COO) <br> of Ouranos Technologies
+							</p>
+						</div>
+		
+						<div class="flex-shrink-0">
+							<img 
+								src={ChiefInnovationOfficer} 
+								alt="ouranos team" 
+								class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
+							/>
+							<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+								Segun Maleghemi
+							</h6>
+							<p class="text-gray-400 mt-2">
+								Chief Innovation Officer <br> of Ouranos Lab.
+							</p>
+						</div>
+		
+						<!-- <div class="flex-shrink-0">
+							<img 
+								src="https://images.unsplash.com/photo-1597346908500-28cda8acfe4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" 
+								alt="ouranos team" 
+								class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover"
+							/>
+							<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+								Segun Maleghemi
+							</h6>
+							<p class="text-gray-400 mt-2">
+								CE0 & Co-founder
+							</p>
+						</div> -->
 					</div>
 	
-					<div class="flex-shrink-0">
-						<img 
-							src={ChiefInnovationOfficer} 
-							alt="ouranos team" 
-							class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover object-top"
-						/>
-						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
-							Segun Maleghemi
-						</h6>
-						<p class="text-gray-400 mt-2">
-							Chief Innovation Officer <br> of Ouranos Lab.
-						</p>
-					</div>
-	
-					<!-- <div class="flex-shrink-0">
-						<img 
-							src="https://images.unsplash.com/photo-1597346908500-28cda8acfe4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" 
-							alt="ouranos team" 
-							class="border-2 border-white rounded-xl lg:h-[400px] h-[300px] lg:w-[400px] w-[300px] object-cover"
-						/>
-						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
-							Segun Maleghemi
-						</h6>
-						<p class="text-gray-400 mt-2">
-							CE0 & Co-founder
-						</p>
+					<!-- <div>
+						<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
+							swipe right
+						</button>
 					</div> -->
 				</div>
-
-				<!-- <div>
-					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
-						swipe right
-					</button>
-				</div> -->
 			</div>
 		</section>
 	</main>
