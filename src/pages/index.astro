@@ -21,31 +21,53 @@ import ManagingDirector from '../assets/managing-director.jpg'
 					<img src={CompanyLogo} alt="ouranos" class="h-[40px]" />
 				</a>
 	
-				<ul class="hidden md:flex text-white gap-8 text-sm">
-					<li> <a href="https://ouranos.africa"> Group </a> </li> /
-					<li> About us </li> /
-					<li> Blog </li>
-				</ul>
-	
-				<button class="border text-white rounded-xl text-xs px-6 py-3 font-serif">
-					Founders Apply
-				</button>
+				<div class="flex items-center gap-14">
+					<ul class="hidden md:flex text-gray-300 items-center gap-10">
+						<li class="relative pr-10">
+							<a href="https://ouranos.africa" class="relative z-[1]">
+								Group
+							</a>
+							<div class="h-full block w-full absolute top-0 left-0 border-r-2 border-r-gray-400 transform-gpu -skew-x-12"></div>
+						</li>
+						<li class="relative">
+							<a href="#about-us" class="relative z-[1] pr-10">
+								About Us
+							</a>
+							<div class="h-full block w-full absolute top-0 left-0 border-r-2 border-r-gray-400 transform-gpu -skew-x-12"></div>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/ouranos-technologies-limited/?originalSubdomain=ng@" class="relative z-[1]">
+								Blog
+							</a>
+					</li>
+					</ul>
+					
+					<a href="https://acgaigj82c0.typeform.com/to/z6VBgQAb">
+						<button class="border text-white rounded-xl text-xs px-6 py-3 font-serif hover:bg-[#81CCB8] hover:border-app-dark-green transition-colors">
+							Founders Apply
+						</button>
+					</a>
+				</div>
 			</div>
 		</header>
 
 		<section class="bg-app-dark-green">
 			<div class="min-h-[300px] md:grid grid-cols-3 max-w-screen-xl mx-auto items-center gap-10 relative py-12 md:py-24 w-10/12">
 				<div class="col-span-5">
-					<h1 class="font-serif md:text-5xl md:leading-normal  sm:text-4xl sm:leading-normal text-3xl text-white font-medium leading-relaxed max-w-3xl">
+					<h1 class="font-serif md:text-5xl md:leading-tight sm:text-4xl sm:tight text-3xl text-white font-medium leading-tight max-w-3xl">
 						We want to build products that help businesses meet the emerging needs of their customers.
 					</h1>
 					<div class="flex items-center gap-5 mt-10">
+					<a href="https://acgaigj82c0.typeform.com/to/z6VBgQAb">
 						<button class="bg-[#81CCB8] text-white font-bold rounded-xl text-xs px-6 py-4 font-serif">
 							Founders Apply
 						</button>
+					</a>
+					<a href="#what-we-do">
 						<button class="border text-white rounded-xl text-xs px-6 py-3 font-serif">
 							Learn More
 						</button>
+					</a>
 					</div>
 				</div>
 				<div></div>
@@ -57,7 +79,7 @@ import ManagingDirector from '../assets/managing-director.jpg'
 			</div>
 		</section>
 
-		<section class="bg-[#E0EEEC] relative z-[1] py-20">
+		<section id="what-we-do" class="bg-[#E0EEEC] relative z-[1] py-20">
 			<div class="max-w-screen-xl mx-auto w-10/12">
 				<h2 class="font-serif font-semibold text-xl border-b border-app-dark-green text-app-dark-green text-center max-w-max px-8 pb-2 mx-auto">
 					What we do
@@ -67,33 +89,33 @@ import ManagingDirector from '../assets/managing-director.jpg'
 				</p>
 				
 
-				<div class="grid md:grid-cols-3 sm:grid-cols-2 mt-20 gap-20 md:gap-10">
+				<div class="grid md:grid-cols-3 sm:grid-cols-2 mt-20 gap-20 md:gap-10 max-w-screen-lg mx-auto">
 					<div class="grid gap-5">
-						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<img src={ServiceIllustration} alt="what we do" class="h-[100px]" />
 						<h5 class="font-serif text-2xl font-semibold">
 							Collaboration
 						</h5>
-						<p>
+						<p class="font-light">
 							We partner with daring technology and solution innovators to solve problems our enterprise customers have or foresee. 
 						</p>
 					</div>
 
 					<div class="grid gap-5">
-						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<img src={ServiceIllustration} alt="what we do" class="h-[100px]" />
 						<h5 class="font-serif text-2xl font-semibold">
 							Funding
 						</h5>
-						<p>
+						<p class="font-light">
 							We invest in companies building very unique solutions that disrupt sectors and improve the experience for our customers. 
 						</p>
 					</div>
 
 					<div class="grid gap-5">
-						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<img src={ServiceIllustration} alt="what we do" class="h-[100px]" />
 						<h5 class="font-serif text-2xl font-semibold">
 							Incubation
 						</h5>
-						<p>
+						<p class="font-light">
 							Internally, we research new trends and opportunities that align with our customer segments and organisational interests.
 						</p>
 					</div>
@@ -108,7 +130,7 @@ import ManagingDirector from '../assets/managing-director.jpg'
 					What we watch out for
 				</h2>
 				<div class="max-w-2xl text-center mx-auto mt-10">
-					<p class="text-xl leading-8">
+					<p class="text-2xl leading-8">
 						“The technology you use impresses no one. The experience you create with it is everything”.
 					</p>
 					<p class="mt-3">-Sean Gerety</p>
@@ -135,37 +157,40 @@ import ManagingDirector from '../assets/managing-director.jpg'
 			</div>
 		</section>
 
-		<section class="bg-[#E0EEEC] relative z-[1] pt-10 pb-24  text-app-dark-green">
+		<section id="about-us" class="bg-white relative z-[1] pt-14 pb-28 text-app-dark-green">
 			<div class="max-w-screen-xl mx-auto w-11/12">
 				<div class="max-w-3xl text-center mx-auto mt-10">
-					<p class="font-serif lg:text-4xl md:text-3xl sm:text-2xl text-xl">
+					<p class="font-serif font-light md:text-3xl sm:text-2xl text-xl">
 						“Let's go invent tomorrow instead of worrying about what happened yesterday.”						
 					</p>
 					<p class="mt-3 font-serif sm:text-base text-sm"><span class="text-gray-400">  -Steve Jobs </span> - Founder Apple</p>
 				</div>
 
-				<div class="max-w-6xl text-center mx-auto mt-14">
-					<p class="font-serif lg:text-4xl md:text-3xl sm:text-2xl text-xl font-light leading-snug">
+				<div class="max-w-3xl text-center mx-auto mt-14">
+					<p class="font-serif md:leading-normal font-thin sm:text-2xl text-xl ">
 						At Ouranos Lab, we enable entrepreneurship. We provide domain insights, help with experimentation, invest in great technology, and provide a unique blend of operational support and capital, so founders can focus on building and scaling.		
 					</p>
-					<p class="mt-3 font-serif sm:text-base text-sm"><span class="text-gray-400"> -Segun Maleghemi </span> - Chief Innovation Officer </p>
+					<p class="mt-5 sm:text-base text-sm font-light"><span class="text-gray-400"> -Segun Maleghemi </span> - Chief Innovation Officer </p>
 				</div>
 			</div>
 		</section>
 
 		<section class="bg-app-dark-green min-h-[600px] text-white py-20">
 
-			<h2 class="font-serif font-semibold text-xl border-b border-white text-center max-w-max px-8 pb-2 mx-auto">
-				Meet the team
-			</h2>
+			<div class="max-w-3xl mx-auto w-full">
+				<h2
+					class="font-serif font-semibold text-xl border-b text-center max-w-max w-[170px] flex justify-center pb-2 whitespace-nowrap ml-24">
+					Meet the leadership team
+				</h2>
+			</div>
 			
 			<div class="flex items-center overflow-auto gap-5 lg:gap-20 px-5 sm:px-10 lg:px-28 mt-20 max-w-[1500px] mx-auto scrollbar-hidden">
-				<div>
+				<!-- <div>
 					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
 						swipe left
 					</button>
 				</div>
-	
+	 -->
 				<div class="flex items-start flex-shrink-0 gap-6">
 					<div class="flex-shrink-0">
 						<img 
@@ -224,11 +249,11 @@ import ManagingDirector from '../assets/managing-director.jpg'
 					</div> -->
 				</div>
 
-				<div>
+				<!-- <div>
 					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[50px] w-[50px] lg:h-[70px] lg:w-[70px]">
 						swipe right
 					</button>
-				</div>
+				</div> -->
 			</div>
 		</section>
 	</main>
@@ -248,7 +273,7 @@ import ManagingDirector from '../assets/managing-director.jpg'
 							Group
 						</h6>
 	
-						<a href="/" class="text-sm font-light">
+						<a href="https://ouranos.com.ng" class="text-sm font-light">
 							Solutions and <br> Services
 						</a>
 						<br />
@@ -259,10 +284,10 @@ import ManagingDirector from '../assets/managing-director.jpg'
 							About
 						</h6>
 	
-						<a href="/" class="text-sm font-light max-w-max block mb-2">
+						<a href="https://www.linkedin.com/company/ouranos-technologies-limited/" class="text-sm font-light max-w-max block mb-2">
 							Career
 						</a>
-						<a href="/" class="text-sm font-light">
+						<a href="https://ouranos.com.ng/our-team/" class="text-sm font-light">
 							Our team
 						</a>
 					</div>
@@ -272,20 +297,15 @@ import ManagingDirector from '../assets/managing-director.jpg'
 							Blog
 						</h6>
 	
-						<a href="/" class="text-sm font-light max-w-max block mb-2">
+						<a href="https://www.linkedin.com/company/ouranos-technologies-limited/" class="text-sm font-light max-w-max block mb-2">
 							Press Release
 						</a>
-						<br />
-						<a href="/" class="text-sm font-light">
+						<a href="https://www.linkedin.com/company/ouranos-technologies-limited/" class="text-sm font-light">
 							Articles
 						</a>
 					</div>
 				</div>
 				
-				<a href="/">
-					Privacy Policy
-				</a>
-				<br />
 				<a href="/">
 					Contact
 				</a>
@@ -314,7 +334,7 @@ import ManagingDirector from '../assets/managing-director.jpg'
 						<div class="h-full block  lg:w-[90%]  w-full absolute top-0 left-0 border-r-2 border-r-white transform-gpu -skew-x-12"></div>
 					</h6>
 
-					<a href="/" class="font-light">
+					<a href="https://ouranos.com.ng" class="font-light">
 						Solutions and <br> Services
 					</a>
 				</div>
