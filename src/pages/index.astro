@@ -1,0 +1,329 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CompanyLogo from '../assets/company-logo.svg';
+import HeroIllustration from '../assets/hero-illustration.svg';
+import ServiceIllustration from '../assets/service-illustration.svg'
+import EyeCatcherIllustration from '../assets/eye-catcher-illustration.svg'
+import TwitterIcon from '../assets/twitter-icon.svg'
+import InstagramIcon from '../assets/instagram-icon.svg'
+import LinkedInIcon from '../assets/linkedin-icon.svg'
+---
+
+<Layout title="Ouranos - Deepening value and positioning for the future.">
+	<main class="min-h-screen bg-white">
+		
+		<header class="bg-app-dark-green py-5">
+			<div class="flex items-center justify-between max-w-screen-2xl mx-auto">
+				<a href="/">
+					<img src={CompanyLogo} alt="ouranos" class="h-[40px]" />
+				</a>
+	
+				<ul class="flex text-white gap-10 text-sm">
+					<li> Group </li> /
+					<li> Abouts us </li> /
+					<li> Blog </li>
+				</ul>
+	
+				<button class="border text-white rounded-lg text-xs px-8 py-3 font-serif">
+					Founders Apply
+				</button>
+			</div>
+		</header>
+
+		<section class="bg-app-dark-green">
+			<div class="min-h-[600px] grid grid-cols-3 max-w-screen-xl mx-auto items-center gap-10 relative py-24">
+				<div class="col-span-2">
+					<h1 class="font-serif text-5xl text-white font-medium leading-normal max-w-3xl">
+						We want to build products that help businesses meet the emerging needs of their customers.
+					</h1>
+					<div class="flex items-center gap-5 mt-10">
+						<button class="bg-[#81CCB8] text-app-dark-green font-semibold rounded-lg text-xs px-8 py-4 font-serif">
+							Founders Apply
+						</button>
+						<button class="border text-white rounded-lg text-xs px-8 py-3 font-serif">
+							Learn More
+						</button>
+					</div>
+				</div>
+				<div></div>
+				<img 
+					src={HeroIllustration} 
+					alt="ouranos" 
+					class="absolute -right-20 h-[105%] opacity-75"
+				/>
+			</div>
+		</section>
+
+		<section class="bg-[#E0EEEC] relative z-[1] py-20">
+			<div class="max-w-screen-xl mx-auto">
+				<h2 class="font-serif font-semibold text-xl border-b border-app-dark-green text-app-dark-green text-center max-w-max px-8 pb-2 mx-auto">
+					What we do
+				</h2>
+				<p class="max-w-2xl text-center mx-auto text-xl leading-8 mt-8">
+					With everything we do, it is about deepening value and positioning for the future.
+				</p>
+				
+
+				<div class="grid grid-cols-3 mt-20 gap-10">
+					<div class="grid gap-5">
+						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<h5 class="font-serif text-2xl font-semibold">
+							Collaboration
+						</h5>
+						<p>
+							We partner with daring technology and solution innovators to solve problems our enterprise customers have or foresee. 
+						</p>
+					</div>
+
+					<div class="grid gap-5">
+						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<h5 class="font-serif text-2xl font-semibold">
+							Funding
+						</h5>
+						<p>
+							We invest in companies building very unique solutions that disrupt sectors and improve the experience for our customers. 
+						</p>
+					</div>
+
+					<div class="grid gap-5">
+						<img src={ServiceIllustration} alt="what we do" class="h-[80px]" />
+						<h5 class="font-serif text-2xl font-semibold">
+							Incubation
+						</h5>
+						<p>
+							Internally, we research new trends and opportunities that align with our customer segments and organisational interests.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-app-dark-green relative z-[1] pt-16 pb-24 text-white">
+			<div class="max-w-screen-xl mx-auto">
+				<h2 
+					class="font-serif font-semibold text-xl border-b text-center max-w-max w-[130px] flex justify-center pb-2 mx-auto whitespace-nowrap">
+					What we watch out for
+				</h2>
+				<div class="max-w-2xl text-center mx-auto mt-10">
+					<p class="text-xl leading-8">
+						“The technology you use impresses no one. The experience you create with it is everything”.
+					</p>
+					<p class="mt-3">-Sean Gerety</p>
+				</div>
+				
+
+				<div class="grid grid-cols-2 mt-20 gap-16 items-center">
+					<img src={EyeCatcherIllustration} alt="ouranos" />
+					<ol class="list-decimal grid gap-14">
+						<li>
+							Founders understand the peculiar challenges of their target customers and have very clear thought process on solve them.
+						</li>
+						<li>
+							The solution can be replicated across the board to mulitple customers willing to pay and with minimum customization. 
+						</li>
+						<li>
+							They have a clear understanding of the resources they need to build this and can also present a net-positive business model.
+						</li>
+						<li>
+							It is an added advantage if they have an MVP running with initial traction (money, users etc) but need the support to scale.
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-[#E0EEEC] relative z-[1] pt-10 pb-24  text-app-dark-green">
+			<div class="max-w-screen-xl mx-auto">
+				<div class="max-w-3xl text-center mx-auto mt-10">
+					<p class="font-serif text-4xl ">
+						“Let's go invent tomorrow instead of worrying about what happened yesterday.”						
+					</p>
+					<p class="mt-3 font-serif"><span class="text-gray-400">  -Steve Jobs </span> - Founder Apple</p>
+				</div>
+
+				<div class="max-w-6xl text-center mx-auto mt-14">
+					<p class="font-serif text-4xl font-light leading-snug">
+						At Ouranos Lab, we enable entrepreneurship. We provide domain insights, help with experimentation, invest in great technology, and provide a unique blend of operational support and capital, so founders can focus on building and scaling.		
+					</p>
+					<p class="mt-3 font-serif"><span class="text-gray-400"> -Segun Maleghemi </span> - Chief Innovation Officer </p>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-app-dark-green min-h-[600px] text-white py-20">
+
+			<h2 class="font-serif font-semibold text-xl border-b border-white text-center max-w-max px-8 pb-2 mx-auto">
+				Meet the team
+			</h2>
+			
+			<div class="flex items-center overflow-auto gap-20 px-28 mt-20 max-w-[1500px] mx-auto scrollbar-hidden">
+				<div>
+					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[70px] w-[70px]">
+						swipe left
+					</button>
+				</div>
+	
+				<div class="flex items-start flex-shrink-0 gap-6">
+					<div class="flex-shrink-0">
+						<img 
+							src="https://images.unsplash.com/photo-1530983822321-fcac2d3c0f06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2034&q=80" 
+							alt="ouranos team" 
+							class="border-2 border-white rounded-xl h-[400px] w-[400px] object-cover"
+						/>
+						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+							Segun Maleghemi
+						</h6>
+						<p class="text-gray-400 mt-2">
+							CE0 & Co-founder
+						</p>
+					</div>
+					
+					<div class="flex-shrink-0">
+						<img 
+							src="https://images.unsplash.com/photo-1625504615927-c14f4f309b63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80" 
+							alt="ouranos team" 
+							class="border-2 border-white rounded-xl h-[400px] w-[400px] object-cover"
+						/>
+						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+							Segun Maleghemi
+						</h6>
+						<p class="text-gray-400 mt-2">
+							CE0 & Co-founder
+						</p>
+					</div>
+	
+					<div class="flex-shrink-0">
+						<img 
+							src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" 
+							alt="ouranos team" 
+							class="border-2 border-white rounded-xl h-[400px] w-[400px] object-cover"
+						/>
+						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+							Segun Maleghemi
+						</h6>
+						<p class="text-gray-400 mt-2">
+							CE0 & Co-founder
+						</p>
+					</div>
+	
+					<div class="flex-shrink-0">
+						<img 
+							src="https://images.unsplash.com/photo-1597346908500-28cda8acfe4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" 
+							alt="ouranos team" 
+							class="border-2 border-white rounded-xl h-[400px] w-[400px] object-cover"
+						/>
+						<h6 class="font-serif max-w-min text-2xl font-semibold mt-4">
+							Segun Maleghemi
+						</h6>
+						<p class="text-gray-400 mt-2">
+							CE0 & Co-founder
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<button class="font-serif text-[10px] text-white bg-[#81CCB7] rounded-full h-[70px] w-[70px]">
+						swipe right
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-[#81CCB7] py-20 text-white">
+		<section class="grid grid-cols-5 max-w-screen-xl mx-auto">
+			<div class="col-span-2">
+				<hr class="border-white mb-5 max-w-[250px]">
+				<img src={CompanyLogo} alt="ouranos" />
+				<p class="font-serif max-w-xs mt-5 mb-10">
+					-With everything we do, it is about deepening value and positioning for the future.
+				</p>
+				
+				<a href="/">
+					Privacy Policy
+				</a>
+				<br />
+				<a href="/">
+					Contact
+				</a>
+				<hr class="border-white my-5 max-w-[250px]">
+				<div class="flex items-center gap-2">
+					<a href="/">
+						<img src={TwitterIcon} alt="ouranos twitter" />
+					</a>
+
+					<a href="/">
+						<img src={InstagramIcon} alt="ouranos instagram" />
+					</a>
+
+					<a href="/">
+						<img src={LinkedInIcon} alt="ouranos linkedin" />
+					</a>
+				</div>
+			</div>
+
+			<div class="col-span-3 grid grid-cols-3 pt-10">
+				<div>
+					<h6 class="mb-5 text-2xl relative">
+						<span class="relative z-[1]">
+							Group
+						</span>
+						<div class="h-full block w-[70%] absolute top-0 left-0 border-r-2 border-r-white transform-gpu -skew-x-12"></div>
+					</h6>
+
+					<a href="/">
+						Solutions and
+					</a>
+					<br />
+					<a href="/">
+						Services
+					</a>
+				</div>
+
+				<div>
+					<h6 class="mb-5 text-2xl relative">
+						<span class="relative z-[1]">
+							About us
+						</span>
+						<div class="h-full block w-[70%] absolute top-0 left-0 border-r-2 border-r-white transform-gpu -skew-x-12"></div>
+					</h6>
+
+					<a href="/">
+						Career
+					</a>
+					<br />
+					<a href="/">
+						Our team
+					</a>
+				</div>
+
+				<div>
+					<h6 class="mb-5 text-2xl relative">
+						<span class="relative z-[1]">
+							Blog
+						</span>
+					</h6>
+
+					<a href="/">
+						Press Release
+					</a>
+					<br />
+					<a href="/">
+						Articles
+					</a>
+				</div>
+			</div>
+		</section>
+	</footer>
+</Layout>
+
+<style>
+	.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+</style>
